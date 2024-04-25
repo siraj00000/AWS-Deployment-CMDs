@@ -1,4 +1,4 @@
-# nodejs-ssl-server
+# nodejs-server
 
 How to deploy nodejs app to AWS EC2 Ubuntu 22 Server with free SSL and Nginx reverse proxy
 
@@ -106,20 +106,20 @@ node --version
 npm -v
 ```
 
-### 4. Clone nodejs-ssl-server repository
+### 4. Clone Nodejs repository
 
 ```sh
 cd /home/ubuntu
 ```
 
 ```sh
-git clone https://github.com/saasscaleup/nodejs-ssl-server.git
+git clone https://github.com/saasscaleup/<nodejs-server.git>
 ```
 
 ### 5. Run node app.js  (Make sure everything working)
 
 ```sh
-cd nodejs-ssl-server
+cd nodejs-server
 ```
 
 ```sh
@@ -137,7 +137,7 @@ npm install -g pm2 # may require sudo
 
 ### 7. Starting the app with pm2 (Run nodejs in background and when server restart)
 ```sh
-pm2 start app.js --name=nodejs-ssl-server
+pm2 start app.js --name=nodejs-server
 ```
 ```sh
 pm2 save     # saves the running processes
