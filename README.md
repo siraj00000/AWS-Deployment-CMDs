@@ -56,7 +56,9 @@ nvm install --lts
 ```
 
 ## Test that Node.js is installed and running correctly 
+```sh
 node -e "console.log('Running Node.js ' + process.version)"
+```
 
 ## Also can follow the below link to install node js
 https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html
