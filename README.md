@@ -270,10 +270,22 @@ To test the renewal process, you can do a dry run with certbot:
 ```sh
 sudo certbot renew --dry-run
 ```
+## For automation check the deployment_automation.sh file in the repo
+## create file dp_auto.sh ensure you're in the root directory
+```sh
+sudo vim dp_auto.sh 
+```
 
-### 11. Visit your website HTTPS://<your website>
-  Enjoy Your free Nodejs server with Free SSL :)
-  
-  
-## Support 🙏😃
+## For permission
+```sh
+chmod 777 dp_auto.sh
+```
 
+## If changes occur in main/master run
+```sh
+./dp_auto.sh
+```
+## If you need to add the .env on the root run
+```sh
+sudo vim .env
+```
